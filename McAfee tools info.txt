@@ -1,0 +1,265 @@
+ShoWin v2.0
+Show information about Windows. Reveal passwords etc.
+
+ShoWin displays useful information about windows by dragging a cursor over them.
+
+Perhaps one of the most popular uses of this program is to display hidden password editbox fields (text behind the asterisks *****). This will work in many programs although Microsoft have changed the way things work in some of their applications, most notably MS Office products and Windows 2000. ShoWin will not work in these cases. Neither will it work for password entry boxes on web pages, at least with most web browsers.
+
+Additional features include the ability to enable windows that have been disabled, unhide hidden windows (try the program with the include invisibles option set and see how many windows you have on your desktop that you didn't know about!) and force windows to stay on top or be placed below others.
+
+
+
+Pasco v1.0
+An Internet Explorer activity forensic analysis tool.
+Author: Keith J. Jones, Principal Computer Forensic Consultant
+
+Many important files within Microsoft Windows have structures that are undocumented. One of the principals of computer forensics is that all analysis methodologies must be well documented and repeatable, and they must have an acceptable margin of error. Currently, there are a lack of open source methods and tools that forensic analysts can rely upon to examine the data found in proprietary Microsoft files.
+
+Many computer crime investigations require the reconstruction of a subject's internet activity. Since this analysis technique is executed regularly, we researched the structure of the data found in Internet Explorer activity files (index.dat files). Pasco, the latin word meaning "browse", was developed to examine the contents of Internet Explorer's cache files. Pasco will parse the information in an index.dat file and output the results in a field delimited manner so that it may be imported into your favorite spreadsheet program. Pasco is built to work on multiple platforms and will execute on Windows (through Cygwin), Mac OS X, Linux, and *BSD platforms.
+
+Usage:
+pasco [options] <filename>
+-d Undelete Activity Records
+-t Field Delimiter (TAB by default)
+
+Example Usage:
+[kjones:pasco/bin]% ./pasco index.dat > index.txt
+
+
+
+BinText 3.03
+Finds Ascii, Unicode and Resource strings in a file.
+
+A small, very fast and powerful text extractor that will be of particular interest to programmers. It can extract text from any kind of file and includes the ability to find plain ASCII text, Unicode (double byte ANSI) text and Resource strings, providing useful information for each item in the optional "advanced" view mode. Its comprehensive filtering helps prevent unwanted text being listed. The gathered list can be searched and saved to a separate file as either a plain text file or in informative tabular format.
+
+Useful tip: Place a shortcut to Bintext in your Windows\SendTo folder so that you can automatically send files to BinText by right-clicking on their names and choosing Send To -> BinText from the drop-down menu. You can set this up by right-clicking on bintext.exe, selecting Copy then open up your Windows\SendTo folder, right click the mouse and select Paste Shortcut.
+
+** NOTE: Some Anti-virus packages may falsely report this product as a keylogger/trojan application. Please upgrade to the latest anti-virus definitions as this has been corrected by most vendors.**
+
+
+
+
+Galleta v1.0
+A Internet Explorer Cookie Forensic Analysis Tool.
+
+Many important files within Microsoft Windows have structures that are undocumented. One of the principals of computer forensics is that all analysis methodologies must be well documented and repeatable, and they must have an acceptable margin of error. Currently, there are a lack of open source methods and tools that forensic analysts can rely upon to examine the data found in proprietary Microsoft files.
+
+Many computer crime investigations require the reconstruction of a subject's Internet Explorer Cookie files. Since this analysis technique is executed regularly, we researched the structure of the data found in the cookie files. Galleta, the Spanish word meaning "cookie", was developed to examine the contents of the cookie files. The foundation of Galleta's examination methodology will be documented in an upcoming whitepaper. Galleta will parse the information in a Cookie file and output the results in a field delimited manner so that it may be imported into your favorite spreadsheet program. Galleta is built to work on multiple platforms and will execute on Windows (through Cygwin), Mac OS X, Linux, and *BSD platforms.
+
+Usage:
+galleta [options] <filename>
+-t Field Delimiter (TAB by default)
+
+Example Usage:
+[kjones:galleta/galleta_20030410_1/bin] kjones% ./galleta antihackertoolkit.txt > cookies.txt
+
+Open cookies.txt as a TAB delimited file in MS Excel to further sort and filter your results
+
+
+
+
+
+PatchIt v2.0
+A binary file byte-patching program.
+
+A file byte-patching utility. This is driven by a simple scripting language. It can patch sequences of bytes in any file, search for byte patterns (with wildcards) and also extract and utilise DLL exported function addresses as source positions in files to be patched.
+
+The total command list is as follows:
+MESSAGE <"message">
+Displays a message during script execution.
+DIR <"directory path">
+Optional directory path to search for files. For compatibility it is advisable not to use specific drive names in the path.
+FILE <"filename"> [filesize]
+Filename to patch. Optional filesize specifies the size that the file must match to be accepted.
+FIND [<*>]...
+Performs a search on the current file for the sequence of bytes that match ... up to max 256. Use the keyword * to match any byte. If a match is found then the PATCH file position value is set to the file position at which the found pattern begins.
+FUNCTION <"funcname">
+Sets the current patch position to the file position of the given exported function name (case sensitive). It is assumed that the file being patched is a DLL.
+PATCH [[POS ] | [OFFSET ]] ...
+Patches the current file at optional file position/offset. Replaces orig_byte with new_byte. Fails if original byte read from file is not orig_byte.
+COPY <"orig_file"> <"new_file">
+Copies "orig_file" to "new_file"
+DELETE <"filename">
+Deletes the specified file.
+INIFILE <"filemame">
+Specifies an INI file to be used in subsequent INI commands. This filename is relative to the last DIR directory path.
+INISECTION <"section">
+Specifies an INI section name for use in subsequent INIWRITE commands
+INIWRITE <"keyname"> <"value">
+Writes the given string value to the INI keyname in the previously specfied INI file's section.
+
+What can this program be used for? Well I sometimes liked to reverse engineer programs, purely for my own benefit. I thought it would be useful to write a program that performed the dual tasks of altering an application's behavior and at the same time kept a documented note of exactly what I had done to achieve the result in the form of the commented script file.
+
+
+
+
+Vision v1.0
+
+Reports all open TCP and UDP ports and maps them to the owning process or application.
+
+Vision, a host based Forensic Utility is the GUI successor to the well-known freeware tool, Fport. This innovative new product from Foundstone shows all of the open TCP and UDP ports on a machine, displays the service that is active on each port, and maps the ports to their respective applications. Vision allows users to access a large amount of supplementary information that is useful for determining host status by displaying detailed system information, applications running, as well as processes and ports in use.
+
+Key Features
+Interrogate ports and identify potential "Trojan" services by using the "Port Probe" command in the port mapper. Using "Port Probe", Vision will enable you to send a customized string of information to the port. Based on the response from the port, a determination can be made to either kill the port, using the "Kill" command, or leave it as is.
+View system events by sorting by application, process, service, port, remote IP, and device drivers in ascending or descending order.
+Identify and review detailed information about Services and Devices to determine if they are Running or Stopped.
+
+
+
+
+
+DumpAutoComplete v0.7
+Dump Firefox AutoComplete files into XML
+GPL Version 2
+
+This application will search for the default Firefox profile of the user who runs the tool and dump the AutoComplete cache in XML format to standard output. Alternatively, autocomplete files can be passed to the application and they will be parsed as well. This application understands mork based autocomplete files (Firefox 1.x) as well as SQLite based formhistory and webappsstore files (Firefox 2.x).
+
+The download package contains a standalone windows application. The MSVCR71.dll maybe needed on systems that do not already have this file. The full Python source code is also included and can be run on Windows, Mac OS X, Linux, or any other system with Python installed (the additional "pysqlite2" modulal is required for SQLite based file parsing).
+
+Usage:
+dumpAutoComplete [formhistory[.dat|.sqlite]]
+
+Example Usage:
+C:\Bin\> dumpAutoComplete > mydata.xml
+
+
+
+
+
+NTLast v3.0
+Security audit tool for Windows NT.
+
+NTLast is specifically targeted for serious security and IIS administration. Scheduled review of your NT event logs is critical for your network. A server breach can be uncovered by regular system auditing. Identifying and tracking who has gained access to your system, then documenting the details is now made easier with NTLast. This tool is able to quickly report on the status of IIS users, as well as filter out web server logons from console logons.
+
+Key Features
+Reads saved .evt files - makes it easy to search through your archives
+Allows you to search before, after, and between dates - again to zoom in on something
+Filters logons 'From' a certain host - helps you zoom in on suspected intrusions
+Can save files in a csv format w/ time field formatted for Excel
+Filters out and distinguishes web log usage - cuts down search time
+
+
+
+
+
+Rifiuti v1.0
+A Recycle Bin Forensic Analysis Tool.
+
+Many important files within Microsoft Windows have structures that are undocumented. One of the principals of computer forensics is that all analysis methodologies must be well documented and repeatable, and they must have an acceptable margin of error. Currently, there are a lack of open source methods and tools that forensic analysts can rely upon to examine the data found in proprietary Microsoft files.
+
+Many computer crime investigations require the reconstruction of a subject's Recycle Bin. Since this analysis technique is executed regularly, we researched the structure of the data found in the Recycle Bin repository files (INFO2 files). Rifiuti, the Italian word meaning "trash", was developed to examine the contents of the INFO2 file in the Recycle Bin. The foundation of Rifiuti's examination methodology is presented in the white paper located here. Rifiuti will parse the information in an INFO2 file and output the results in a field delimited manner so that it may be imported into your favorite spreadsheet program. Rifiuti is built to work on multiple platforms and will execute on Windows (through Cygwin), Mac OS X, Linux, and *BSD platforms.
+
+Usage:
+rifiuti [options] <filename>
+-t Field Delimiter (TAB by default)
+
+Example Usage:
+[kjones:rifiuti/rifiuti_20030410_1/bin] kjones% ./rifiuti INFO2 > INFO2.txt
+
+Open INFO2.txt as a TAB delimited file in MS Excel to further sort and filter your results
+
+
+
+
+
+Forensic Toolkit v2.0
+Tools to help examine NTFS for unauthorized activity.
+
+The Forensic ToolKit contains several Win32 Command line tools that can help you examine the files on a NTFS disk partition for unauthorized activity. We built these tools to help us do our job, we hope they can help you as well.
+
+Key Features
+AFind is the only tool that lists files by their last access time without tampering the data the way that right-clicking on file properties in Explorer will. AFind allows you to search for access times between certain time frames, coordinating this with logon info provided from ntlast, you can to begin determine user activity even if file logging has not been enabled.
+HFind scans the disk for hidden files. It will find files that have either the hidden attribute set, or NT's unique and painful way of hiding things by using the directory/system attribute combination. This is the method that IE uses to hide data. HFind lists the last access times.
+SFind scans the disk for hidden data streams and lists the last access times.
+FileStat is a quick dump of all file and security attributes. It works on only one file at a time but this is usually sufficient.
+Hunt is a quick way to see if a server reveals too much info via NULL sessions.
+Command Line Switches
+afind [dir] /f [filename] /ns=no subs /a after /b before /m between
+time format =
+
+hfind [dir] /hd=find dir/system attribs /ns=no subs
+
+sfind [dir] /ns=no subs
+
+filestat [filename]
+
+hunt [\\servername]
+
+System Requirements
+Windows NT 4.0 SP3
+16MB Memory
+Administrator privileges
+Audit log enabled with searchable records
+Set NT command line buffer to 500 or more lines. 1200 or more lines works well
+
+
+
+
+
+
+Pasco v1.0
+An Internet Explorer activity forensic analysis tool.
+Author: Keith J. Jones, Principal Computer Forensic Consultant
+
+Many important files within Microsoft Windows have structures that are undocumented. One of the principals of computer forensics is that all analysis methodologies must be well documented and repeatable, and they must have an acceptable margin of error. Currently, there are a lack of open source methods and tools that forensic analysts can rely upon to examine the data found in proprietary Microsoft files.
+
+Many computer crime investigations require the reconstruction of a subject's internet activity. Since this analysis technique is executed regularly, we researched the structure of the data found in Internet Explorer activity files (index.dat files). Pasco, the latin word meaning "browse", was developed to examine the contents of Internet Explorer's cache files. Pasco will parse the information in an index.dat file and output the results in a field delimited manner so that it may be imported into your favorite spreadsheet program. Pasco is built to work on multiple platforms and will execute on Windows (through Cygwin), Mac OS X, Linux, and *BSD platforms.
+
+Usage:
+pasco [options] <filename>
+-d Undelete Activity Records
+-t Field Delimiter (TAB by default)
+
+Example Usage:
+[kjones:pasco/bin]% ./pasco index.dat > index.txt
+
+Open index.txt as a TAB delimited file in MS Excel to further sort and filter your results:
+
+
+
+
+
+FileWatch v1.0
+A file change monitor. Used with BlackICE Defender.
+
+FileWatch (originally called ICEWatch 1.x) is a small utility that can monitor a given file for changes. Monitoring can detect file size changes or simply file writes, both with minimal impact on system resources (no polling is performed). The primary use of this utility is for monitoring changes in the log file of a personal firewall program and being able to spawn a separate application when changes are detected, but the tool can be applied to any number of other uses.
+
+
+
+
+
+
+Fport v2.0
+Identify unknown open ports and their associated applications
+
+fport supports Windows NT4, Windows 2000 and Windows XP
+
+fport reports all open TCP/IP and UDP ports and maps them to the owning application. This is the same information you would see using the 'netstat -an' command, but it also maps those ports to running processes with the PID, process name and path. Fport can be used to quickly identify unknown open ports and their associated applications.
+
+Usage:
+C:\>fport
+FPort v2.0 - TCP/IP Process to Port Mapper
+
+Pid Process Port Proto Path
+392 svchost -> 135 TCP C:\WINNT\system32\svchost.exe
+8 System -> 139 TCP
+8 System -> 445 TCP
+508 MSTask -> 1025 TCP C:\WINNT\system32\MSTask.exe
+392 svchost -> 135 UDP C:\WINNT\system32\svchost.exe
+8 System -> 137 UDP
+8 System -> 138 UDP
+8 System -> 445 UDP
+224 lsass -> 500 UDP C:\WINNT\system32\lsass.exe
+212 services -> 1026 UDP C:\WINNT\system32\services.exe
+
+The program contains five (5) switches. The switches may be utilized using either a '/'
+or a '-' preceding the switch. The switches are;
+
+Usage:
+/? usage help
+/p sort by port
+/a sort by application
+/i sort by pid
+/ap sort by application path
+
+
