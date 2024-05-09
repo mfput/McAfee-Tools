@@ -3,4 +3,4 @@ McAfee once had a large amount of free security tools you could download from th
 If I am violating any copyright laws, let me know and I will take these down. :/ <br/> <br/>
 Tools include: bintext303, dumpautocomplete, fileinsight, filewatch, ForensicToolKit20, fport, galleta, nlast30, pasco, patchit, rifiuti, saveinfo, showin, and vision.
 
-
+Like my work? Donate here: https://buymeacoffee.com/forensicnoobsecurity
